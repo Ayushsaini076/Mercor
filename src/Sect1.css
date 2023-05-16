@@ -4,10 +4,22 @@
     padding: 10em 0 0 4em;
     height: 80vh;
     font-size: large;
+    /* border: 1px solid blue; */
   
     display: flex;
     flex-direction: row;
     /* border: 1px solid red; */
+    /* overflow: hidden; */
+  }
+
+  .imgbox{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+    position: relative;
+    top: 1.5em;
+    right: 1em;
   }
   
   .left{
@@ -51,18 +63,25 @@
     width: 90%;
     height: 70vh;
     background-color: #101010;
+    scroll-behavior: smooth;
+    
   }
   
   .content{
     position: relative;
     top: 0%;
     left: 20%;
+    width: fit-content;
+    margin-right: 0px;
+    position: relative;
+    right: 4em;
   }
   .content h4{
     font-size: 2.5em;
     line-height: 1em;
     color: white;
     margin-bottom: 0.5em;
+    width: fit-content;
   }
   .content h4 span{
     margin-left: 2em;
@@ -70,6 +89,7 @@
   .content p{
     margin-top: 0px;
     font-size: 1.2em;
+    width: fit-content;
   
   }
   
@@ -113,6 +133,7 @@
     top: 10em;
     right:16.5em;
     cursor: pointer;
+    transition: transform 0.5s ease;
   }
   
   .mimg{
@@ -120,6 +141,13 @@
     position: relative;
     top: 15%;
     left: 25%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+
+  .pop{
+    transform: scale(1.2);
+    /* opacity: 0; */
   }
   
   
@@ -127,3 +155,9 @@
     margin-bottom: 0px;
     font-size: 1.4em;
   }
+
+  .animated{
+    transform: rotate(180deg);
+  }
+
+  

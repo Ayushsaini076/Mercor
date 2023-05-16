@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Sect.css'
+import { useRef } from 'react';
 
 function Sect() {
     const [scrollamnt,setsrollamnt]=useState(0);
@@ -17,14 +18,19 @@ function Sect() {
 
     },[]);
 
-    
+    // var element = document.getElementById('slowdiv');
+
+    // element.addEventListener("scroll", function(event) {
+    //     event.preventDefault();
+    //     element.scrollTop += event.deltaY * 0.8; 
+    //   });
 
     
 
-    
+
     
   return (
-    <div style={{overflow:scrollamnt>770?"hidden":"auto"}} className='sec'>
+    <div id='slowdiv'  style={{overflowY:scrollamnt>770?"hidden":"auto"}} className='sec'>
         
         <span style={{color:scrollamnt>710?'white':'grey'}}>In</span>
         <span style={{color:scrollamnt>715?'white':'grey'}}>Chronicle</span>

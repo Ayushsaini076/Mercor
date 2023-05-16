@@ -1,3 +1,6 @@
 .app{
     height: 200vh;
+    /* overflow-x: hidden; */
+    margin-right: 0px;
+    /* overflow-y: hidden; */
 }
